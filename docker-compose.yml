@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  php:
+    image: php:8.0-apache
+    ports:
+      - 8216:80
+    environment:
+        VIRTUAL_HOST: wwinter.co.uk
+        LETSENCRYPT_HOST: wwinter.co.uk
+        VIRTUAL_PORT: 8216
+    volumes:
+      - ./src:/var/www/html
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
