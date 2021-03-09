@@ -4,11 +4,11 @@ services:
   php:
     image: php:8.0-apache
     ports:
-      - 8216:80
+      - 8201:80
     environment:
         VIRTUAL_HOST: wwinter.co.uk
         LETSENCRYPT_HOST: wwinter.co.uk
-        VIRTUAL_PORT: 8216
+        VIRTUAL_PORT: 8201
     volumes:
       - ./src:/var/www/html
 
