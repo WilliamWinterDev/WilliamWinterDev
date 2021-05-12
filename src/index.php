@@ -78,19 +78,14 @@
           <div class="subheading mb-5">London, United Kingdom
             <a href="mailto:<?= $email_address; ?>?subject=Website Enquiry" title="Send Email to <?= $email_address; ?>" onclick="gtag('event', 'Clicked to email', {'event_category': 'email_contact'});"><?= $email_address; ?></a>
           </div>
-          <p class="lead mb-5">I am a self-taught web developer with over 8 years experience in PHP and 4 years commercial experience in building web applications using a variety of languages for front and back end development. I am very keen to advance my skills as a website developer and adapt to an ever changing industry.<br><a href='downloads/William Winter - CV.pdf' target="_blank" onclick="gtag('event', 'Download CV', {'event_category': 'download_cv'});">Download CV</a></p>
+          <p class="lead mb-5">I am a self-taught developer with over 10 years experience in development including 7 years of commercial experience in web application development using a variety of programming languages.<br><a href='downloads/CV.pdf' target="_blank" onclick="gtag('event', 'Download CV', {'event_category': 'download_cv'});">Download CV</a></p>
 
           <div class="social-icons">
             <a href="https://www.linkedin.com/in/william-winter" title="View LinkedIn" onclick="gtag('event', 'Clicked to view LinkedIn', {'event_category': 'social_link_click'});" target="_blank">
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://www.twitter.com/wwinterdev" title="View Twitter" onclick="gtag('event', 'Clicked to view Twitter', {'event_category': 'social_link_click'});" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <? if(false){ ?>
-            <a href="https://www.facebook.com/williamwinterdevelopment" title="View Facebook" onclick="gtag('event', 'Clicked to view Facebook', {'event_category': 'social_link_click'});" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-            <? } ?>
+            <a href="https://github.com/WilliamWinterDev" title="View GitHub" onclick="gtag('event', 'Clicked to view Github', {'event_category': 'social_link_click'});" target="_blank">
+              <i class="fab fa-github"></i>
             </a>
           </div>
         </div>
@@ -106,7 +101,9 @@
             <div class="resume-content mr-auto">
               <h3 class="mb-0">PHP Developer</h3>
               <div class="subheading mb-3"><a href="http://www.immediate.co.uk/" title="View Immediate" onclick="gtag('event', 'Clicked to view Immediate', {'event_category': 'work_experience_click'});" target="_blank">Immediate Media Co</a></div>
-              <p>Working for a large publishing company helping to digitalise their existing magazines on a new content delivery platform. Creating and maintaining WordPress plugins to help deliver new features to multiple brands at the same time. Working in a <strong>TDD</strong> and <strong>Agile</strong> environment to work efficiently.</p>
+              <p>Working on brands such as <a href="https://www.bbcgoodfood.com/" target="_blank">BBCGoodFood</a>, <a href="http://www.radiotimes.com" target="_blank">RadioTimes.com</a> and <a href="https://www.gardenersworld.com/" target="_blank">Gardeners World</a> I was helping to develop a new headless content delivery platform built on top of WordPress. While building the new headless platform I was able to work with new technologies such as Symfony, Docker, AWS (Lambda, CodePipeline & ECS) and ElasticSearch.</p>
+              <p>During my time at Immediate I have worked on a new ElasticSearch service using ElasticSearch 7 and also maintained our current ElasticSearch microservice. I also implemented a new related content module into the brands which provided better recommendations for articles a user was viewing based on our ElasticSearch weighting.</p>
+              <p>While working at Immediate we worked in an Agile environment and aimed for 100% unit test coverage on all new work completed which would be automatically blocked by our Jenkins pipeline tests and our AWS CodePipeline reports.</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">November 2018 - Present</span>
@@ -126,45 +123,12 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Developer</h3>
-              <div class="subheading mb-3"><a href="https://www.worksity.com/web/" title="View Worksity" onclick="gtag('event', 'Clicked to view Worksity', {'event_category': 'work_experience_click'});" target="_blank">Worksity</a></div>
-              <p>At the beginning of 2018 I started working with Worksity as a freelance developer working on integrating various different social media platforms with the Worksity application. I worked in an agile development team using PHP / CodeIgniter and AngularJS to create a web application. I have gained knowledge of the project management tool Jira during this job.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">May 2018 - September 2018</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
               <h3 class="mb-0">Apprentice Web Developer</h3>
               <div class="subheading mb-3"><a href="https://gmp-crm.com/" title="View GMP" onclick="gtag('event', 'Clicked to view GMP', {'event_category': 'work_experience_click'});" target="_blank">Global Management Platform</a></div>
               <p>As an apprentice website developer I gained invaluable knowledge regarding the process of developing a web application. I undertook training courses to learn C#, VB, MS-SQL and how to use UNIX systems. I also gained a Microsoft <strong>Programming in HTML5 with JavaScript and CSS3</strong> (<a href='https://www.microsoft.com/en-gb/learning/course.aspx?cid=20480' target="_blank">Course: 20480B</a>) certification</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">May 2014 - May 2015</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">IT Support Technician <small>(Work Experience)</small></h3>
-              <div class="subheading mb-3"><a href="http://twpa.org.uk/" onclick="gtag('event', 'Clicked to view The Workplace', {'event_category': 'work_experience_click'});" target="_blank">The Workplace <small>(Durham County Council)</small></a></div>
-              <p>My first look into the IT industry was work experience at The Workplace. Working as part of Durham County Councils IT team I completed tasks to keep websites up to date with relevant information and performed multiple IT support jobs such as password resets, software support and  general IT support.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">October 2013 - March 2014</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Freelance Website Developer</h3>
-              <div class="subheading mb-3">Personal Projects</div>
-              <p>Since I began developing websites I have worked on a variety of different projects to expand my skills. Some of my projects include working with a graphic designer to turn PSD files into fully functional, responsive HTML templates. I also have experience working on text based online games which include a lot of JavaScript / jQuery, MySQL and PHP, I used these to help build complicated PHP scripts to provide my users with more enjoyment.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">June 2012 - Present</span>
             </div>
           </div>
 
@@ -178,23 +142,11 @@
         <div class="my-auto">
           <h2 class="mb-5">Education</h2>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">The Open University</h3>
-              <div class="subheading mb-3">Computer Science Degree</div>
-              <p>Following Software Security track</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">May 2018 - Ongoing</span>
-            </div>
-          </div>
-
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Baltic Training Services</h3>
-              <div class="subheading mb-3">Level 3 Software Development Apprenticeship</div>
-              <div>Software Development</div>
-              <p>Completed while at Global Management Platform</p>
+              <div class="subheading mb-3">Level 3 Software Development Apprenticeship - <i>Distinction+ Achieved</i></div>
+              <p>After leaving school and sampling a college course I concluded an apprenticeship would prove a more successful career path for me. My apprenticeship with Baltic Training Services taught me invaluable skills in software development courses including C#, Visual Basic, MS-SQL, Unix, Software Development Process & Testing and Customer Services. During my time at Baltic I gained commercial experience which has since allowed me to advance my software development career.</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">May 2014 - March 2015</span>
@@ -217,6 +169,12 @@
             </li>
             <li class="list-inline-item">
               <i class="icon-mysql"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-symfony"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-docker"></i>
             </li>
             <li class="list-inline-item">
               <i class="fab fa-html5"></i>
@@ -254,10 +212,20 @@
           <ul class="fa-ul mb-0">
             <li>
               <i class="fa-li fa fa-check"></i>
-              Responsive Mobile Design</li>
+              AWS CodePipeline
+            </li>
             <li>
               <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
+              Jenkins Build Pipeline
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Responsive Mobile Design
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Browser Testing &amp; Debugging
+            </li>
             <li>
               <i class="fa-li fa fa-check"></i>
               Agile Development &amp; Scrum
