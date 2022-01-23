@@ -17,7 +17,7 @@ spec:
         app: wwinter
     spec:
       containers:
-        - name: wwinter-test
+        - name: wwinter
           image: <IMAGE>
           ports:
             - name: http
