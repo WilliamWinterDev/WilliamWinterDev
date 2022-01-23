@@ -1,9 +1,8 @@
-FROM node:17.4.0
-
-ENV NODE_ENV=production
-WORKDIR /src
-RUN cd /src
-RUN npm install --production
-
 FROM php:8.0-apache
+
+WORKDIR /var/www/html
+
 COPY src/ /var/www/html/
+RUN apk add --update nodejs nodejs-npm
+
+RUN npm install
