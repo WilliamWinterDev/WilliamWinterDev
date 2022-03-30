@@ -12,7 +12,7 @@ services:
     volumes:
       - ./src:/var/www/html
 
-networks:
-  default:
-    external:
-      name: nginx-proxy
+ networks:
+   default:
+     external:
+       name: nginx-proxy

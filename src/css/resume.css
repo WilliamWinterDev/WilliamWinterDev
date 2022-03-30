@@ -56,8 +56,11 @@ p.lead {
 
 .dev-icons {
   font-size: 3rem; }
+.dev-icon {
+  padding: 0.2rem;
+}
   .dev-icons .list-inline-item i:hover {
-    color: #6f42c1; }
+    color: #6f42c1;}
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
