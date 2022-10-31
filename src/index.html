@@ -1,6 +1,3 @@
-<?
-	$email_address = "contact@wwinter.co.uk";
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,12 +23,12 @@
     <title>William Winter - Personal Website - WWinter.co.uk</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-    <link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0e9321709e.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
@@ -79,9 +76,9 @@
                 <span class="text-primary">Winter</span>
             </h1>
             <div class="subheading mb-5">London, United Kingdom
-                <a href="mailto:<?= $email_address; ?>?subject=Website Enquiry"
-                   title="Send Email to <?= $email_address; ?>"
-                   onclick="gtag('event', 'Clicked to email', {'event_category': 'email_contact'});"><?= $email_address; ?></a>
+                <a href="mailto:contact@wwinter.co.uk?subject=Website Enquiry"
+                   title="Send Email to contact@wwinter.co.uk"
+                   onclick="gtag('event', 'Clicked to email', {'event_category': 'email_contact'});">contact@wwinter.co.uk</a>
             </div>
             <p class="lead mb-5">I am a self-taught developer with over 10 years experience in development including 7
                 years of commercial experience in web application development using a variety of programming
@@ -235,74 +232,21 @@
 
             <div class="subheading mb-3">Programming Languages &amp; Tools</div>
             <ul class="list-inline dev-icons">
-				<?php
-					$icons = [
-						[
-							"title" => "Golang",
-							"class" => "fab fa-golang",
-						],
-						[
-							"title" => "Python",
-							"class" => "fab fa-python"
-						],
-						[
-							"title" => "PHP",
-							"class" => "icon-php-alt"
-						],
-						[
-							"title" => "MySQL",
-							"class" => "icon-mysql"
-						],
-						[
-							"title" => "Symfony",
-							"class" => "fab fa-symfony"
-						],
-						[
-							"title" => "Jenkins",
-							"class" => "fab fa-jenkins"
-						],
-						[
-							"title" => "Docker",
-							"class" => "fab fa-docker"
-						],
-						[
-							"title" => "JavaScript",
-							"class" => "fab fa-js"
-						],
-						[
-							"title" => "SASS",
-							"class" => "fab fa-sass"
-						],
-						[
-							"title" => "WordPress",
-							"class" => "fab fa-wordpress"
-						],
-						[
-							"title" => "Git",
-							"class" => "fab fa-git-square"
-						],
-						[
-							"title" => "Google Cloud Platform",
-							"class" => "icon-google-developers"
-						],
-						[
-							"title" => "AWS",
-							"class" => "fab fa-aws"
-						],
-						[
-							"title" => "Linux",
-							"class" => "fab fa-linux"
-						],
-						[
-							"title" => "Bootstrap",
-							"class" => "icon-bootstrap"
-						]
-					];
-
-					foreach ($icons as $icon) {
-						echo "<li class='list-inline-item dev-icon' data-toggle='tooltip' data-placement='top' title='{$icon['title']}'><i class='{$icon['class']}'></i></li>";
-					}
-				?>
+                <li class='list-inline-item dev-icon' data-toggle='tooltip' data-placement='top' title='Go'><i class='fab fa-golang'></i></li>
+                <li class='list-inline-item dev-icon' data-toggle='tooltip' data-placement='top' title='Python'><i class='fab fa-python'></i></li>
+                <li class='list-inline-item dev-icon' data-toggle='tooltip' data-placement='top' title='PHP'><i class='icon-php-alt'></i></li>
+                <li class='list-inline-item dev-icon' data-toggle='tooltip' data-placement='top' title='MySQL'><i class='icon-mysql'></i></li>
+                <li class='list-inline-item dev-icon' data-toggle='tooltip' data-placement='top' title='Symfony'><i class='fab fa-symfony'></i></li>
+                <li class='list-inline-item dev-icon' data-toggle='tooltip' data-placement='top' title='Jenkins'><i class='fab fa-jenkins'></i></li>
+                <li class='list-inline-item dev-icon' data-toggle='tooltip' data-placement='top' title='Docker'><i class='fab fa-docker'></i></li>
+                <li class='list-inline-item dev-icon' data-toggle='tooltip' data-placement='top' title='JavaScript'><i class='fab fa-js'></i></li>
+                <li class='list-inline-item dev-icon' data-toggle='tooltip' data-placement='top' title='SASS'><i class='fab fa-sass'></i></li>
+                <li class='list-inline-item dev-icon' data-toggle='tooltip' data-placement='top' title='WordPress'><i class='fab fa-wordpress'></i></li>
+                <li class='list-inline-item dev-icon' data-toggle='tooltip' data-placement='top' title='Git'><i class='fab fa-git-square'></i></li>
+                <li class='list-inline-item dev-icon' data-toggle='tooltip' data-placement='top' title='Google Cloud Platform'><i class='icon-google-developers'></i></li>
+                <li class='list-inline-item dev-icon' data-toggle='tooltip' data-placement='top' title='AWS'><i class='fab fa-aws'></i></li>
+                <li class='list-inline-item dev-icon' data-toggle='tooltip' data-placement='top' title='Linux'><i class='fab fa-linux'></i></li>
+                <li class='list-inline-item dev-icon' data-toggle='tooltip' data-placement='top' title='Bootstrap'><i class='icon-bootstrap'></i></li>
             </ul>
 
             <div class="subheading mb-3">Workflow</div>
